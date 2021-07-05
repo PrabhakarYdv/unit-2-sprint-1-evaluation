@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FT-AND-03 U-2 C-1</string>
+    <string name="welcome">WELCOME</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="enter_the_name">Enter the name</string>
+    <string name="enter_the_email">Enter the Email</string>
+    <string name="name">Name</string>
+
+    <string name="password">Password</string>
+</resources>

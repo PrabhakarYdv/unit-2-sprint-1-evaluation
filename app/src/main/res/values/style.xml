@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="button_Main">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:fontFamily">@font/roboto</item>
+      <item name="android:textSize">@dimen/btn_textSIze</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="form_option">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/form_margin</item>
+        <item name="android:textSize">@dimen/option_textSize</item>
+        <item name="background">@drawable/form_bg</item>
+    </style>
+
+</resources>

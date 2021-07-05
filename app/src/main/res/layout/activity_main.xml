@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BC1C2B"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/welcome_topMargin"
+        android:fontFamily="@font/roboto"
+        android:text="@string/welcome"
+        android:textColor="@color/welcome_textColor"
+        android:textSize="@dimen/welcome_textSize"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginHorizontal="@dimen/desc_horz_margin"
+        android:layout_marginTop="@dimen/desc_top_margin"
+        android:fontFamily="@font/roboto"
+        android:text="Masai School is a 21st century coding school that cares about you!"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/desc_textSize" />
+
+    <ImageView
+        android:layout_width="@dimen/logo_width"
+        android:layout_height="@dimen/logo_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/logo_topMargin"
+        android:src="@mipmap/masai_homepage_logo2" />
+
+    <TextView
+        android:id="@+id/sign_btn"
+        style="@style/button_Main"
+        android:layout_marginTop="@dimen/sign_btn_topMargin"
+        android:background="@drawable/white_btn"
+        android:paddingHorizontal="@dimen/sign_btnPadding_horizontal"
+        android:paddingVertical="@dimen/btnPadding_vertical"
+        android:text="@string/sign_in"
+        android:textColor="@color/signBtn_textColor"
+        android:textSize="@dimen/btn_textSIze" />
+
+
+    <TextView
+        android:id="@+id/create_btn"
+        style="@style/button_Main"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/black_btn"
+        android:paddingHorizontal="@dimen/create_btn_paddingHorizontal"
+        android:paddingVertical="@dimen/btnPadding_vertical"
+        android:text="@string/create_an_account"
+        android:textColor="@color/createBtn_textColor"
+        android:textSize="@dimen/btn_textSIze" />
+
+</LinearLayout>

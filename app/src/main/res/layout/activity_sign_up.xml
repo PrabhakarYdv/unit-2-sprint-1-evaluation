@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,136 +7,140 @@
     android:orientation="vertical"
     tools:context=".SignUpActivity">
 
-
-    <View
-        android:id="@+id/view"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="#BC1C2B"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="40dp"
-        android:src="@drawable/arrow"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#BC1C2B"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/signup"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:layout_marginRight="20dp"
-        android:fontFamily="@font/roboto"
-        android:gravity="right"
-        android:paddingTop="40dp"
-        android:text="SIGN UP "
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/white_btn"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/signup">
-
-        <TextView
-            android:id="@+id/welcome"
+        <ImageView
+            android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="15dp"
-            android:fontFamily="@font/roboto"
-            android:text="Welcome back"
-            android:textColor="#BC1C2B"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/create_continue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/welcome"
-            android:layout_marginLeft="40dp"
-            android:fontFamily="@font/roboto"
-            android:text="Continue to Sign Up!"
-            android:textColor="#BC1C2B"
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/name_option"
-            style="@style/form_option"
-            android:layout_below="@id/create_continue"
-            android:layout_marginTop="30dp"
-            android:text="@string/name" />
-
-        <EditText
-            android:id="@+id/name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/name_option"
-            android:layout_margin="@dimen/form_margin"
-            android:background="@drawable/form_bg"
-            android:hint="@string/enter_the_name"
-            android:padding="@dimen/form_padding" />
-
-
-        <TextView
-            android:id="@+id/email_option"
-            style="@style/form_option"
-            android:layout_below="@id/name"
-            android:text="@string/name" />
-
-        <EditText
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/email_option"
-            android:layout_margin="@dimen/form_margin"
-            android:background="@drawable/form_bg"
-            android:hint="@string/enter_the_email"
-            android:padding="@dimen/form_padding" />
-
-        <TextView
-            android:id="@+id/password_option"
-            style="@style/form_option"
-            android:layout_below="@id/email"
-            android:text="@string/password" />
-
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/password_option"
-            android:layout_margin="@dimen/form_margin"
-            android:background="@drawable/form_bg"
-            android:hint="@string/enter_the_email"
-            android:padding="@dimen/form_padding" />
-
-
-        <TextView
-            android:id="@+id/sign_up"
-            style="@style/button_Main"
-            android:layout_below="@id/password"
+            android:layout_marginLeft="20dp"
             android:layout_marginTop="40dp"
-            android:layout_marginLeft="90dp"
-            android:background="@drawable/red_btn"
-            android:paddingHorizontal="@dimen/create_btn_paddingHorizontal"
-            android:paddingVertical="@dimen/btnPadding_vertical"
-            android:text="Sign Up"
+            android:src="@drawable/arrow"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/roboto"
+            android:gravity="right"
+            android:paddingTop="40dp"
+            android:text="SIGN UP "
             android:textColor="#FFFFFF"
-            android:textSize="@dimen/btn_textSIze" />
-    </RelativeLayout>
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/white_btn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signup">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto"
+                android:text="Welcome back"
+                android:textColor="#BC1C2B"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/create_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/welcome"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="@font/roboto"
+                android:text="Continue to Sign Up!"
+                android:textColor="#BC1C2B"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/name_option"
+                style="@style/form_option"
+                android:layout_below="@id/create_continue"
+                android:layout_marginTop="30dp"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/name_option"
+                android:layout_margin="@dimen/form_margin"
+                android:background="@drawable/form_bg"
+                android:hint="@string/enter_the_name"
+                android:padding="@dimen/form_padding" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/email_option"
+                style="@style/form_option"
+                android:layout_below="@id/name"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/email_option"
+                android:layout_margin="@dimen/form_margin"
+                android:background="@drawable/form_bg"
+                android:hint="@string/enter_the_email"
+                android:padding="@dimen/form_padding" />
+
+            <TextView
+                android:id="@+id/password_option"
+                style="@style/form_option"
+                android:layout_below="@id/email"
+                android:text="@string/password" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/password_option"
+                android:layout_margin="@dimen/form_margin"
+                android:background="@drawable/form_bg"
+                android:hint="@string/enter_the_email"
+                android:padding="@dimen/form_padding" />
+
+
+            <TextView
+                android:id="@+id/sign_up_btn"
+                style="@style/button_Main"
+                android:layout_below="@id/password"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/red_btn"
+                android:paddingHorizontal="@dimen/create_btn_paddingHorizontal"
+                android:paddingVertical="@dimen/btnPadding_vertical"
+                android:text="Sign Up"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/btn_textSIze" />
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

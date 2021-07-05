@@ -12,6 +12,8 @@ public class SignInActivity extends AppCompatActivity {
     private TextView signup_link;
     private TextView signin_btn;
     private EditText editText_name;
+    private EditText editText_password;
+    private EditText editText_email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +21,9 @@ public class SignInActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sign_in);
         signup_link = findViewById(R.id.signup_link);
         signin_btn = findViewById(R.id.sign_in_btn);
-        editText_name = findViewById(R.id.name);
+        editText_name = findViewById(R.id.name_signIn);
+        editText_email = findViewById(R.id.email_create);
+        editText_password = findViewById(R.id.password_signIn);
         signin_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,5 +41,32 @@ public class SignInActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public boolean name_validate() {
+        String name = editText_name.getText().toString();
+        if (name.length() >= 4) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean email_validate() {
+        String email = editText_email.getText().toString();
+        if (email.length() > 5) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public boolean password_validate() {
+        String password = editText_password.getText().toString();
+        if (password.length() >= 6) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

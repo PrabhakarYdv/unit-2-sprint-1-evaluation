@@ -21,11 +21,12 @@
         android:id="@+id/greet_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text=""
         android:textColor="@color/welcome_textColor"
-        android:textSize="70dp"
+        android:textSize="50dp"
         android:textStyle="bold" />
 
 </RelativeLayout>

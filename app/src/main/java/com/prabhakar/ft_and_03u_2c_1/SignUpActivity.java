@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class SignUpActivity extends AppCompatActivity {
     TextView sign_up;
     EditText editText_name;
+    private TextView signing_link;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +25,14 @@ public class SignUpActivity extends AppCompatActivity {
                 Intent intent = new Intent(SignUpActivity.this, HomeActivity.class);
                 String name = editText_name.getText().toString();
                 intent.putExtra("name", name);
+                startActivity(intent);
+            }
+        });
+        signing_link = findViewById(R.id.signin_link);
+        signing_link.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
                 startActivity(intent);
             }
         });

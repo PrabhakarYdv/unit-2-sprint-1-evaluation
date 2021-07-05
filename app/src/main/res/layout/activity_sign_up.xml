@@ -15,7 +15,7 @@
         <View
             android:id="@+id/view"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="200dp"
             android:background="#BC1C2B"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -49,7 +49,8 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="60dp"
             android:background="@drawable/white_btn"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/signup">
@@ -132,6 +133,7 @@
                 android:id="@+id/sign_up_btn"
                 style="@style/button_Main"
                 android:layout_below="@id/password"
+                android:layout_centerHorizontal="true"
                 android:layout_marginLeft="90dp"
                 android:layout_marginTop="40dp"
                 android:background="@drawable/red_btn"
@@ -140,6 +142,31 @@
                 android:text="Sign Up"
                 android:textColor="#FFFFFF"
                 android:textSize="@dimen/btn_textSIze" />
+
+            <TextView
+                android:id="@+id/have_an_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sign_up_btn"
+                android:layout_alignLeft="@id/sign_up_btn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="Have an Account ? "
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/signin_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/have_an_account"
+                android:layout_toRightOf="@id/have_an_account"
+                android:text=" Sign In"
+                android:textColor="#BC1C2B"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
         </RelativeLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,6 +14,7 @@ public class SignUpActivity extends AppCompatActivity {
     private TextView signing_link;
     private EditText editText_password;
     private EditText editText_email;
+    private String email_pattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,9 +33,6 @@ public class SignUpActivity extends AppCompatActivity {
                     intent.putExtra("name", name);
                     startActivity(intent);
                 }
-                else{
-
-                }
             }
         });
         signing_link = findViewById(R.id.signin_link);
@@ -47,29 +45,32 @@ public class SignUpActivity extends AppCompatActivity {
         });
     }
 
-    public boolean name_validate() {
+    private boolean name_validate() {
         String name = editText_name.getText().toString();
         if (name.length() >= 4) {
             return true;
         } else {
+            editText_name.setError("minimum 4 characters needed");
             return false;
         }
     }
 
-    public boolean email_validate() {
+    private boolean email_validate() {
         String email = editText_email.getText().toString();
-        if (email.length() > 5) {
+        if (email.matches(email_pattern)) {
             return true;
         } else {
+            editText_email.setError("invalid email");
             return false;
         }
     }
 
-    public boolean password_validate() {
+    private boolean password_validate() {
         String password = editText_password.getText().toString();
         if (password.length() >= 6) {
             return true;
         } else {
+            editText_password.setError("password is weak");
             return false;
         }
     }

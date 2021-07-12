@@ -8,12 +8,12 @@
     <dimen name="desc_top_margin">35dp</dimen>
     <dimen name="desc_textSize">20dp</dimen>
     <dimen name="logo_topMargin">50dp</dimen>
-    <dimen name="sign_btn_topMargin">180dp</dimen>
+    <dimen name="sign_btn_topMargin">50dp</dimen>
     <dimen name="sign_btnPadding_horizontal">150dp</dimen>
     <dimen name="btnPadding_vertical">20dp</dimen>
     <dimen name="btn_textSIze">20dp</dimen>
     <dimen name="create_btn_paddingHorizontal">100dp</dimen>
-    <dimen name="form_margin">25dp</dimen>
+    <dimen name="form_margin">20dp</dimen>
     <dimen name="option_textSize">17dp</dimen>
     <dimen name="form_padding">10dp</dimen>
     <dimen name="option_top_margin">30dp</dimen>
